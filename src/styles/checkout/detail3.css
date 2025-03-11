@@ -1,0 +1,53 @@
+.aliign_items-center{
+  align-items: center;
+}
+
+.m_26062bec {
+  position: relative;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  order: 1;
+}
+
+.m_26063560:checked, .m_26063560[data-indeterminate] {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+:where([data-mantine-color-scheme="light"]) .m_26063560 {
+  background-color: var(--mantine-color-white);
+  border-color: var(--mantine-color-gray-4);
+}
+input.m_26063560{
+  appearance: none;
+  border: calc(.0625rem * var(--mantine-scale)) solid transparent;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  border-radius: var(--checkbox-radius,var(--mantine-radius-default));
+  padding: 0;
+  display: block;
+  margin: 0;
+  transition: border-color .1s ease,background-color .1s ease;
+  cursor: var(--mantine-cursor-type);
+  -webkit-tap-highlight-color: transparent;
+
+  /* Added my me because other csss files are affecting this property */
+  position: default;
+  visibility: visible;
+}
+
+
+.m_26063560:checked + .m_bf295423, .m_26063560[data-indeterminate] + .m_bf295423 {
+  opacity: 1;
+  transform: none;
+}
+.m_bf295423 {
+  position: absolute;
+  inset: 0;
+  width: 60%;
+  margin: auto;
+  color: var(--checkbox-icon-color);
+  pointer-events: none;
+  transform: translateY(calc(.3125rem * var(--mantine-scale))) scale(.5);
+  opacity: 0;
+  transition: transform .1s ease,opacity .1s ease;
+}

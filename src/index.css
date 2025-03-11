@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  
+}
+*{
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body.gray-background,
+body.gray-background main.body {
+  background-color: #f7f7f7;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+form {
+  float: none;
+  margin: 0 auto;
+  max-width: 3000px;
+}
+h5 {
+  font-size: 19px;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+h4,
+h5 {
+  color: #000;
+  font-family: Inter, sans-serif;
+}
+h3 {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+}
+h2,
+h3 {
+  color: #000;
+  font-family: Nunito, sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+picture {
+  display: contents;
+}
+
+.button {
+  align-items: center;
+  border-radius: 29.5px;
+  cursor: pointer;
+  display: flex;
+  font-family: Nunito, sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  min-width: fit-content;
+  padding: 0.5em 1rem;
+  transition: 0.3s;
+  width: max-content;
+}
+
+/* Responsive navbar */
+@media (min-width: 1024px) {
+  #nav-bar-drawer {
+    display: none !important;
+  }
+  #nav-bar {
+    display: flex !important;
+  }
+}
+
+/* Home page */
+.relative {
+  position: relative !important;
+}
+
+p {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+}
+
+.special-scroll-slider-prop {
+  user-select: none;
+}
+
+.disable-links a {
+  pointer-events: none !important;
+}
+
+/* puppy character slider responsive bar tracker */
+/* responsive-puppy-character-slider-trackbar */
+
+.responsive-puppy-character-slider-trackbar {
+  width: 55.5vw !important;
+}
+
+@media (max-width: 1200px) {
+  .responsive-puppy-character-slider-trackbar {
+    width: 45vw !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .responsive-puppy-character-slider-trackbar {
+    width: 35vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-puppy-character-slider-trackbar {
+    width: 30vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-puppy-character-slider-trackbar {
+    width: 28vw !important;
+  }
+}
+
+.h1-strong,
+h1,
+h1.strong {
+  color: #000;
+  font-family: Nunito, sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+/* Puppy for sale page. Responsive nav */
+@media (max-width: 1024px) and (min-width: 769px) {
+  #FilterSidebar-responsive_1024 {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px), (max-width: 768px) {
+  #FilterSidebar-responsive_1024 {
+    display: none;
+  }
+}
+
+/* Show SmallFilterPopup-responsive_768 only below 768px */
+@media (max-width: 768px) {
+  #SmallFilterPopup-responsive_768 {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  #SmallFilterPopup-responsive_768 {
+    display: none;
+  }
+}
+
+form {
+  float: none;
+  margin: 0 auto;
+  max-width: 3000px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.cta-white {
+  display: flex;
+}
+
+label {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 5px auto;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+#profile-reviews_js-reviews-component--big {
+  display: none !important;
+}
+#profile-reviews_js-reviews-component--small {
+  display: flex !important;
+}
+/* Show small component on small screens, hide on large screens */
+@media (min-width: 900px) {
+  #profile-reviews_js-reviews-component--big {
+    display: block !important;
+  }
+  #profile-reviews_js-reviews-component--small {
+    display: none !important;
+  }
+}
+
+.show-for-small {
+  display: flex !important;
+}
+@media (min-width: 768px) {
+  .show-for-small {
+    display: none !important;
+  }
+}
+
+.ReactModalPortal {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .ReactModalPortal {
+    display: block !important;
+  }
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+}
+
+/* @media (max-width: 1024px) {
+  #orderSummary--small {
+    display: block !important;
+  }
+} */
+
+@media (min-width: 1024px) {
+  #orderSummary--small {
+    display: none !important;
+  }
+}
